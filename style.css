@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(50, 61, 61);
+   
+}
+
+.calculator {
+    width: 350px;
+    margin: 70px auto;
+    background-color: rgb(252, 240, 240)(0, 4%, 5%);
+    padding: 20px;
+    border: 1px solid hsl(244, 90%, 45%);
+    box-shadow: #1c04f1;
+    
+    
+}
+
+#display {
+    width: 90%;
+    height: 40px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: right 2px; ;
+    border-bottom: 1px solid hsl(241, 92%, 46%);
+    color: #aef8b1;
+    
+
+
+
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+    
+}
+
+button {
+    height: 40px;
+    font-size: 18px;
+    border: rgb(20, 211, 30);
+    border-radius: 5px;
+    background-color: rgb(15, 16, 17);
+    color: hsl(0, 22%, 93%);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #aef8b1;
+    color: black;
+}
+#seven{
+    grid-row: 2;
+    grid-column: 1;
+}
+#eight{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#nine{
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#subtract{
+    grid-row: 1;
+    grid-column: 4;
+    color: chocolate;
+}
+
+#four{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#five{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#six{
+    grid-row: 3;
+    grid-column: 3;
+}
+
+#add{
+    grid-row: 2;
+    grid-column: 4;
+    height: 225%;
+    color: chocolate;
+}
+
+#one{
+    grid-row: 4;
+    grid-column: 1;
+}
+
+#two{
+    grid-row: 4;
+    grid-column: 2;
+}
+
+#three{
+    grid-row: 4;
+    grid-column: 3;
+}
+
+#equals{
+    grid-row: 4;
+    grid-column: 4;
+    height: 225%;
+}
+
+#zero{
+    grid-row: 5;
+    grid-column: 1;
+    width: 220%;
+}
+
+#decimal{
+    grid-row: 5;
+    grid-column: 3;
+    color: chocolate;
+
+}
+#clear{
+    color: goldenrod;
+}
+#divide{
+    color: chocolate;
+}
+
+#multiply{
+    color: chocolate;
+
+}
