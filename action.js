@@ -19,7 +19,7 @@ buttons.forEach(button => {
                 num1 = num1.slice(0, -1);
                 display.value = num1;
             }
-        } else if (value === '=') {
+         } else if (value === '=') {
             if (num1 !== '' && num2 !== '' && operator !== '') {
                 let result = eval(num1 + operator + num2);
                 display.value = result;
@@ -30,7 +30,7 @@ buttons.forEach(button => {
         } else if (value === '+' || value === '-' || value === '*' || value === '/') {
             if (num1 !== '') {
                 operator = value;
-                display.value = '';
+                display.value = num1+operator;
             }
         } else {
             if (operator === '') {
@@ -38,7 +38,7 @@ buttons.forEach(button => {
                 display.value = num1;
             } else {
                 num2 += value;
-                display.value = num2;
+                display.value = num1+operator+num2;
             }
         }
     });
